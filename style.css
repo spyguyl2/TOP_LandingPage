@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-image {
+    max-width: 500px;
+    max-height: auto;
+}

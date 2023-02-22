@@ -1,9 +1,71 @@
+.header, .hero-container, .footer {
+    background-color: #1F2937;
+}
+
 body {
     display: flex;
     flex-direction: column;
 }
 
+.hero-container {
+    display: flex;
+}
+
+a, .subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.footer {
+    color:#E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button, .sign-up-container {
+    background-color: #3882F6;
+}
+
+#middle-container-title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-weight: lighter;
+    font: italic;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
 #main-image {
     max-width: 500px;
     max-height: auto;
+    min-width: 100px;
+    min-height: auto;
 }

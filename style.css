@@ -2,6 +2,27 @@
     background-color: #1F2937;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,11 +30,34 @@ body {
 
 .hero-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#hero-button {
+    flex-shrink: 0;
+    width: 100px;
+    
+}
+
+button {
+    border-radius: 8px;
 }
 
 a, .subtext {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
 }
 
 .footer {

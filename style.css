@@ -5,8 +5,8 @@
 .header {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
     gap: 10px;
 }
 
@@ -23,7 +23,21 @@ ul {
     gap: 10px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
+
 body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+}
+
+.header-hero-container{
     display: flex;
     flex-direction: column;
 }
@@ -32,23 +46,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 100px;
+    gap: 20px;
 }
 
 .hero-text {
     display: flex;
+    justify-content:baseline;
     flex-direction: column;
+    width: 400px;
     flex-wrap: wrap;
-}
-
-#hero-button {
-    flex-shrink: 0;
-    width: 100px;
-    
 }
 
 button {
     border-radius: 8px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    flex-shrink: 0;
+    width: 100px;
 }
 
 a, .subtext {
@@ -81,6 +98,7 @@ button, .sign-up-container {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding: 40px;
 }
 
 .middle-container {
@@ -88,10 +106,20 @@ button, .sign-up-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .img-container {
     display: flex;
+    gap: 50px;
+}
+
+.img-text-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    align-items: center;
 }
 
 .quote {
@@ -99,6 +127,16 @@ button, .sign-up-container {
     font-size: 36px;
     font-weight: lighter;
     font: italic;
+    display: flex;
+    padding: 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote-text {
+    width: 700px;
 }
 
 .main-title {
@@ -108,8 +146,39 @@ button, .sign-up-container {
 }
 
 #main-image {
-    max-width: 500px;
-    max-height: auto;
-    min-width: 100px;
-    min-height: auto;
+    width: 525px;
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 75px 150px;
+}
+
+#call-to-action-button {
+    border: 1px solid white;
+}
+
+#call-to-action-top-text, #call-to-action-bottom-text {
+    color: white;
+}
+
+#call-to-action-top-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#thor {
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+p {
+    margin: 0;
 }
